@@ -106,7 +106,7 @@
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
  */
-#define BED_MARGIN         0
+#define BED_MARGIN         10
 
 /**
  * Servo probe deploy and stow angles
@@ -195,7 +195,7 @@
  * Extra movement of X axis. Can help with probing more of the bed.
  * Set both to 0 (zero) if you do not have a Z-Probe.
  */
-#define XTRA_BED_LEFT     0  // Distance nozzle can move towards the left past X = 0
+#define XTRA_BED_LEFT     5  // Distance nozzle can move towards the left past X = 0
 #define XTRA_BED_RIGHT    0  // Distance nozzle can move towards the right past X = 200
 
 /**
@@ -1092,7 +1092,8 @@
 // The size of the print bed
 #define X_BED_SIZE 200
 #if ENABLED(LARGE_BED)
-  #define Y_BED_SIZE 280
+//  #define Y_BED_SIZE 280
+  #define Y_BED_SIZE 270
 #else
   #define Y_BED_SIZE 200
 #endif
